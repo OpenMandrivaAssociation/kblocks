@@ -20,13 +20,15 @@ space is available in the play area. When there is not enough space
 for blocks to fall, the game is over.
 
 %files
-%{_kde_bindir}/kblocks
-%{_kde_applicationsdir}/kblocks.desktop
-%{_kde_appsdir}/kblocks
-%{_kde_datadir}/config.kcfg/kblocks.kcfg
-%{_kde_configdir}/kblocks.knsrc
-%{_kde_docdir}/HTML/en/kblocks
-%{_kde_iconsdir}/hicolor/*/apps/kblocks.*
+%doc %{_docdir}/HTML/en/kblocks
+%{_bindir}/kblocks
+%{_datadir}/applications/org.kde.kblocks.desktop
+%{_datadir}/kblocks
+%{_datadir}/config.kcfg/kblocks.kcfg
+%{_iconsdir}/hicolor/*/apps/kblocks.*
+%{_datadir}config/kblocks.knsrc
+
+
 
 #------------------------------------------------------------------------------
 
