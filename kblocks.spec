@@ -26,7 +26,7 @@ for blocks to fall, the game is over.
 %{_datadir}/kblocks
 %{_datadir}/config.kcfg/kblocks.kcfg
 %{_iconsdir}/hicolor/*/apps/kblocks.*
-%{_datadir}config/kblocks.knsrc
+%{_datadir}/config/kblocks.knsrc
 
 
 
