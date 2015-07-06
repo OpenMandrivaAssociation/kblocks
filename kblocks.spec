@@ -9,6 +9,7 @@ URL:		http://www.kde.org/applications/games/kblocks/
 Source:		http://download.kde.org/stable/applications/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	libkdegames-devel
 BuildRequires:	cmake(ECM)
+BuildRequires:	cmake(KF5NotifyConfig)
 
 %description
 KBlocks is the classic falling blocks game.
