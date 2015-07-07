@@ -23,6 +23,9 @@ for blocks to fall, the game is over.
 %doc %{_docdir}/HTML/en/kblocks
 %{_bindir}/kblocks
 %{_datadir}/applications/org.kde.kblocks.desktop
+%{_datadir}/appdata/kblocks.appdata.xml
+%{_datadir}/kxmlgui5/kblocks/kblocksui.rc
+%{_sysconfdir}/xdg/kblocks.knsrc
 %{_datadir}/kblocks
 %{_datadir}/config.kcfg/kblocks.kcfg
 %{_iconsdir}/hicolor/*/apps/kblocks.*
