@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   kblocks-15.08.0.tar.xz: 504c5983b7c5b1ddc80b0a41b336f1f5258b4671
+sources:
+  kblocks-15.08.1.tar.xz: 2deba87602b89c50fcff95997a2144c4b2fe9668
