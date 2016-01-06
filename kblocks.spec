@@ -11,6 +11,8 @@ BuildRequires:	libkdegames-devel
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(KF5NotifyConfig)
 BuildRequires:	cmake(Qt5Test)
+BuildRequires:	cmake(KF5Notifications)
+BuildRequires:	cmake(KF5DocTools)
 
 %description
 KBlocks is the classic falling blocks game.
