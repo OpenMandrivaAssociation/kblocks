@@ -1,5 +1,5 @@
 Name:		kblocks
-Version:	15.12.3
+Version:	16.04.0
 Release:	1
 Epoch:		1
 Summary:	Single player falling blocks puzzle game
@@ -26,7 +26,7 @@ for blocks to fall, the game is over.
 %doc %{_docdir}/HTML/en/kblocks
 %{_bindir}/kblocks
 %{_datadir}/applications/org.kde.kblocks.desktop
-%{_datadir}/appdata/kblocks.appdata.xml
+%{_datadir}/appdata/org.kde.kblocks.appdata.xml
 %{_datadir}/kxmlgui5/kblocks/kblocksui.rc
 %{_sysconfdir}/xdg/kblocks.knsrc
 %{_datadir}/kblocks
