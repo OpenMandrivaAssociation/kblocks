@@ -1,5 +1,5 @@
 Name:		kblocks
-Version:	17.03.80
+Version:	17.04.0
 Release:	1
 Epoch:		1
 Summary:	Single player falling blocks puzzle game
@@ -24,8 +24,7 @@ without any gaps. When a line is completed it is removed, and more
 space is available in the play area. When there is not enough space
 for blocks to fall, the game is over.
 
-%files
-%doc %{_docdir}/HTML/en/kblocks
+%files -f %{name}.lang
 %{_bindir}/kblocks
 %{_datadir}/applications/org.kde.kblocks.desktop
 %{_datadir}/metainfo/org.kde.kblocks.appdata.xml
@@ -34,9 +33,6 @@ for blocks to fall, the game is over.
 %{_datadir}/kblocks
 %{_datadir}/config.kcfg/kblocks.kcfg
 %{_iconsdir}/hicolor/*/apps/kblocks.*
-
-
-
 
 #------------------------------------------------------------------------------
 
@@ -49,3 +45,4 @@ for blocks to fall, the game is over.
 
 %install
 %ninja_install -C build
+%find_lang %{name} --with-html
