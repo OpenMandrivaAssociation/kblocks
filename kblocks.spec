@@ -1,5 +1,5 @@
 Name:		kblocks
-Version:	17.08.0
+Version:	17.08.1
 Release:	1
 Epoch:		1
 Summary:	Single player falling blocks puzzle game
