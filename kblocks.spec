@@ -1,5 +1,5 @@
 Name:		kblocks
-Version:	 18.08.3
+Version:	 18.11.80
 Release:	1
 Epoch:		1
 Summary:	Single player falling blocks puzzle game
@@ -32,6 +32,7 @@ space is available in the play area. When there is not enough space
 for blocks to fall, the game is over.
 
 %files -f %{name}.lang
+%{_sysconfdir}/xdg/kblocks.categories
 %{_bindir}/kblocks
 %{_datadir}/applications/org.kde.kblocks.desktop
 %{_datadir}/metainfo/org.kde.kblocks.appdata.xml
