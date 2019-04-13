@@ -1,6 +1,6 @@
 Name:		kblocks
-Version:	 18.12.3
-Release:	2
+Version:	 19.04.0
+Release:	1
 Epoch:		1
 Summary:	Single player falling blocks puzzle game
 Group:		Games/Arcade
