@@ -1,0 +1,12 @@
+diff -up kblocks-19.08.2/KBlocksView.cpp.omv~ kblocks-19.08.2/KBlocksView.cpp
+--- kblocks-19.08.2/KBlocksView.cpp.omv~	2019-10-14 18:24:57.928365660 +0200
++++ kblocks-19.08.2/KBlocksView.cpp	2019-10-14 18:25:07.924415124 +0200
+@@ -21,7 +21,7 @@ KBlocksView::KBlocksView(KBlocksScene *s
+     setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+     setFrameStyle(QFrame::NoFrame);
+ 
+-    setOptimizationFlags(QGraphicsView::DontClipPainter |
++    setOptimizationFlags(//QGraphicsView::DontClipPainter |
+                          QGraphicsView::DontSavePainterState /*|
+                           QGraphicsView::DontAdjustForAntialiasing*/);
+ 
