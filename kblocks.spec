@@ -54,6 +54,3 @@ for blocks to fall, the game is over.
 %install
 %ninja_install -C build
 %find_lang %{name} --with-html
-
-# FIXME gdb 8.3.1 hang
-strip --strip-unneeded %{buildroot}%{_bindir}/*
