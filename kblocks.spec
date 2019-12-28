@@ -1,5 +1,5 @@
 Name:		kblocks
-Version:	19.11.90
+Version:	19.12.0
 Release:	1
 Epoch:		1
 Summary:	Single player falling blocks puzzle game
@@ -7,7 +7,7 @@ Group:		Games/Arcade
 License:	GPLv2 and LGPLv2 and GFDL
 URL:		http://www.kde.org/applications/games/kblocks/
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
-Source0:	http://download.kde.org/%{stable}/applications/%{version}/src/%{name}-%{version}.tar.xz
+Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name}-%{version}.tar.xz
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt5Widgets)
 BuildRequires:	cmake(Qt5Svg)
@@ -54,3 +54,6 @@ for blocks to fall, the game is over.
 %install
 %ninja_install -C build
 %find_lang %{name} --with-html
+
+# FIXME gdb 8.3.1 hang
+strip --strip-unneeded %{buildroot}%{_bindir}/*
