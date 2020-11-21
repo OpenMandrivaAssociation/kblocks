@@ -1,5 +1,5 @@
 Name:		kblocks
-Version:	20.08.3
+Version:	20.11.80
 Release:	1
 Epoch:		1
 Summary:	Single player falling blocks puzzle game
@@ -37,7 +37,7 @@ for blocks to fall, the game is over.
 %{_datadir}/applications/org.kde.kblocks.desktop
 %{_datadir}/metainfo/org.kde.kblocks.appdata.xml
 %{_datadir}/kxmlgui5/kblocks/kblocksui.rc
-%{_sysconfdir}/xdg/kblocks.knsrc
+%{_datadir}/knsrcfiles/kblocks.knsrc
 %{_datadir}/kblocks
 %{_datadir}/config.kcfg/kblocks.kcfg
 %{_iconsdir}/hicolor/*/apps/kblocks.*
