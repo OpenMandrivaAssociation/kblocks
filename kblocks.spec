@@ -1,5 +1,5 @@
 Name:		kblocks
-Version:	20.11.80
+Version:	20.11.90
 Release:	1
 Epoch:		1
 Summary:	Single player falling blocks puzzle game
