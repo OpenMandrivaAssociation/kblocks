@@ -11,6 +11,7 @@ Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/%{name
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt5Widgets)
 BuildRequires:	cmake(Qt5Svg)
+BuildRequires:	cmake(Qt5Test)
 BuildRequires:	cmake(Qt5Network)
 BuildRequires:	cmake(KF5Config)
 BuildRequires:	cmake(KF5ConfigWidgets)
