@@ -1,5 +1,5 @@
 Name:		kblocks
-Version:	22.04.3
+Version:	22.07.90
 Release:	1
 Epoch:		1
 Summary:	Single player falling blocks puzzle game
@@ -37,7 +37,6 @@ for blocks to fall, the game is over.
 %{_bindir}/kblocks
 %{_datadir}/applications/org.kde.kblocks.desktop
 %{_datadir}/metainfo/org.kde.kblocks.appdata.xml
-%{_datadir}/kxmlgui5/kblocks/kblocksui.rc
 %{_datadir}/knsrcfiles/kblocks.knsrc
 %{_datadir}/kblocks
 %{_datadir}/config.kcfg/kblocks.kcfg
