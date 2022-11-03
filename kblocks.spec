@@ -1,6 +1,6 @@
 Name:		kblocks
-Version:	22.08.2
-Release:	2
+Version:	22.08.3
+Release:	1
 Epoch:		1
 Summary:	Single player falling blocks puzzle game
 Group:		Games/Arcade
