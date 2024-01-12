@@ -10,6 +10,7 @@ Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/kblock
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt6Widgets)
 BuildRequires:	cmake(Qt6Svg)
+BuildRequires:  cmake(Qt6SvgWidgets)
 BuildRequires:	cmake(Qt6Test)
 BuildRequires:	cmake(Qt6Network)
 BuildRequires:	cmake(KF6Config)
@@ -22,6 +23,7 @@ BuildRequires:	cmake(KF6I18n)
 BuildRequires:	cmake(KF6WidgetsAddons)
 BuildRequires:	cmake(KF6XmlGui)
 BuildRequires:	cmake(KDEGames6)
+BuildRequires:  qt6-qtbase-theme-gtk3
 
 %description
 KBlocks is the classic falling blocks game.
