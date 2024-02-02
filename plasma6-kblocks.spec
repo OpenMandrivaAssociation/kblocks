@@ -1,6 +1,6 @@
 Name:		plasma6-kblocks
-Version:	24.01.90
-Release:	2
+Version:	24.01.95
+Release:	1
 Summary:	Single player falling blocks puzzle game
 Group:		Games/Arcade
 License:	GPLv2 and LGPLv2 and GFDL
