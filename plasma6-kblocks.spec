@@ -1,12 +1,19 @@
+%define git 20240217
+%define gitbranch release/24.02
+%define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Name:		plasma6-kblocks
-Version:	24.01.95
-Release:	1
+Version:	24.01.96
+Release:	%{?git:0.%{git}.}1
 Summary:	Single player falling blocks puzzle game
 Group:		Games/Arcade
 License:	GPLv2 and LGPLv2 and GFDL
 URL:		http://www.kde.org/applications/games/kblocks/
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
+%if 0%{?git:1}
+Source0:	https://invent.kde.org/games/kblocks/-/archive/%{gitbranch}/kblocks-%{gitbranchd}.tar.bz2#/kblocks-%{git}.tar.bz2
+%else
 Source0:	http://download.kde.org/%{stable}/release-service/%{version}/src/kblocks-%{version}.tar.xz
+%endif
 BuildRequires:	cmake(ECM)
 BuildRequires:	cmake(Qt6Widgets)
 BuildRequires:	cmake(Qt6Svg)
@@ -46,7 +53,7 @@ for blocks to fall, the game is over.
 #------------------------------------------------------------------------------
 
 %prep
-%autosetup -p1 -n kblocks-%{?git:master}%{!?git:%{version}}
+%autosetup -p1 -n kblocks-%{?git:%{gitbranchd}}%{!?git:%{version}}
 %cmake \
 	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
 	-G Ninja
