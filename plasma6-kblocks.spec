@@ -2,7 +2,7 @@
 %define gitbranch release/24.02
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Name:		plasma6-kblocks
-Version:	24.05.2
+Version:	24.08.0
 Release:	%{?git:0.%{git}.}1
 Summary:	Single player falling blocks puzzle game
 Group:		Games/Arcade
@@ -42,6 +42,7 @@ for blocks to fall, the game is over.
 
 %files -f kblocks.lang
 %{_datadir}/qlogging-categories6/kblocks.categories
+%{_datadir}/qlogging-categories6/kblocks.renamecategories
 %{_bindir}/kblocks
 %{_datadir}/applications/org.kde.kblocks.desktop
 %{_datadir}/metainfo/org.kde.kblocks.appdata.xml
