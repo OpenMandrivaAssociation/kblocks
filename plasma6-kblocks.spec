@@ -7,7 +7,7 @@ Release:	%{?git:0.%{git}.}1
 Summary:	Single player falling blocks puzzle game
 Group:		Games/Arcade
 License:	GPLv2 and LGPLv2 and GFDL
-URL:		http://www.kde.org/applications/games/kblocks/
+URL:		https://www.kde.org/applications/games/kblocks/
 %define stable %([ "`echo %{version} |cut -d. -f3`" -ge 80 ] && echo -n un; echo -n stable)
 %if 0%{?git:1}
 Source0:	https://invent.kde.org/games/kblocks/-/archive/%{gitbranch}/kblocks-%{gitbranchd}.tar.bz2#/kblocks-%{git}.tar.bz2
