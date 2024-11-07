@@ -2,7 +2,7 @@
 %define gitbranch release/24.02
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Name:		plasma6-kblocks
-Version:	24.08.2
+Version:	24.08.3
 Release:	%{?git:0.%{git}.}1
 Summary:	Single player falling blocks puzzle game
 Group:		Games/Arcade
