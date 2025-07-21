@@ -2,7 +2,7 @@
 %define gitbranch release/24.02
 %define gitbranchd %(echo %{gitbranch} |sed -e "s,/,-,g")
 Name:		kblocks
-Version:	25.04.0
+Version:	25.04.3
 Release:	%{?git:0.%{git}.}1
 Summary:	Single player falling blocks puzzle game
 Group:		Games/Arcade
@@ -32,6 +32,11 @@ BuildRequires:	cmake(KF6XmlGui)
 BuildRequires:	cmake(KDEGames6)
 BuildRequires:  qt6-qtbase-theme-gtk3
 
+BuildSystem:	cmake
+BuildOption:	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON
+
+%rename plasma6-kblocks
+
 %description
 KBlocks is the classic falling blocks game.
 
@@ -50,18 +55,3 @@ for blocks to fall, the game is over.
 %{_datadir}/kblocks
 %{_datadir}/config.kcfg/kblocks.kcfg
 %{_iconsdir}/hicolor/*/apps/kblocks.*
-
-#------------------------------------------------------------------------------
-
-%prep
-%autosetup -p1 -n kblocks-%{?git:%{gitbranchd}}%{!?git:%{version}}
-%cmake \
-	-DKDE_INSTALL_USE_QT_SYS_PATHS:BOOL=ON \
-	-G Ninja
-
-%build
-%ninja -C build
-
-%install
-%ninja_install -C build
-%find_lang kblocks --with-html
